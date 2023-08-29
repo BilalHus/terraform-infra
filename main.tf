@@ -26,7 +26,7 @@ module "myapp-server" {
   my_ip = var.my_ip
   env_prefix = var.env_prefix
   image_name = var.image_name
-  public_key_location = var.public_key_location
+  public_key = var.public_key
   instance_type = var.instance_type
   subnet_id = module.vpc.public_subnets[0]
   avail_zone = var.avail_zone
